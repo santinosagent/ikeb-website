@@ -1,0 +1,4 @@
+- 2026-04-03 19:55:01Z | action=write | target=/srv/agent/workspaces/ikeb-pisa/src/components/sections/Hero.tsx
+- 2026-04-03 19:56:13Z | action=write | target=/srv/agent/workspaces/ikeb-pisa/src/components/sections/ChiSiamoPreview.tsx
+- 2026-04-03 19:57:08Z | action=write | target=/srv/agent/workspaces/ikeb-pisa/src/components/sections/MenuHighlight.tsx
+- 2026-04-03 19:57:49Z | action=write | target=/srv/agent/workspaces/ikeb-pisa/src/components/sections/CTACollaboratori.tsx

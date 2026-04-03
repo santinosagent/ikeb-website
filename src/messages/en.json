@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "chiSiamo": "About Us",
+    "menu": "Menu",
+    "contattaci": "Contact"
+  },
+  "hero": {
+    "title": "Kebab",
+    "titleAccent": "Italiano",
+    "subtitle": "The authenticity of Italian tradition in every bite",
+    "cta": "Discover the Menu",
+    "ctaSecondary": "Become a Partner"
+  },
+  "chiSiamo": {
+    "title": "Our Story",
+    "subtitle": "A project born from the passion for good food",
+    "description": "IKEB was born from the idea of bringing a unique gastronomic experience to Pisa, combining the tradition of kebab with the flavors and quality of Italian cuisine. Every dish is prepared with fresh and selected ingredients, respecting our land and our customers.",
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Quality",
+        "description": "Only fresh, premium ingredients"
+      },
+      "tradition": {
+        "title": "Tradition",
+        "description": "Recipes passed down and improved over time"
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Love for cooking in every dish"
+      }
+    },
+    "cta": "Work with Us"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Discover our dishes prepared with love",
+    "categories": {
+      "kebab": "Kebab",
+      "piadine": "Piadine",
+      "panini": "Sandwiches",
+      "bevande": "Drinks",
+      "promozioni": "Deals"
+    },
+    "items": {
+      "kebab": [
+        { "name": "Classic Kebab", "description": "Veal and chicken meat, grilled vegetables, tzatziki sauce", "price": "€7.50" },
+        { "name": "Extra Kebab", "description": "XL portion with double meat and melted cheese", "price": "€9.50" },
+        { "name": "Vegetarian Kebab", "description": "Grilled vegetables, feta, olives, tahina sauce", "price": "€7.00" },
+        { "name": "Spectacular Kebab", "description": "Mixed meat, crispy bacon, egg, cheese", "price": "€10.00" }
+      ],
+      "piadine": [
+        { "name": "Romagna Piada", "description": "Crostino, arugula, Parma ham", "price": "€6.50" },
+        { "name": "Kebab Piada", "description": "Kebab meat, vegetables, yogurt sauce", "price": "€7.00" },
+        { "name": "Vegetarian Piada", "description": "Grilled vegetables, buffalo mozzarella, tomato", "price": "€6.00" }
+      ],
+      "panini": [
+        { "name": "Kebab Sandwich", "description": "Whole wheat bread, kebab, vegetables, sauce", "price": "€6.50" },
+        { "name": "Chicken Sandwich", "description": "Grilled chicken, lettuce, mayonnaise", "price": "€6.00" },
+        { "name": "Meat Sandwich", "description": "Beef steak, cheese, salad", "price": "€7.50" }
+      ],
+      "bevande": [
+        { "name": "Mineral Water", "price": "€1.50" },
+        { "name": "Soft Drinks", "price": "€2.00" },
+        { "name": "Craft Beer", "price": "€4.00" },
+        { "name": "Fruit Juices", "price": "€2.50" }
+      ]
+    },
+    "cta": "Order Now"
+  },
+  "contattaci": {
+    "title": "Contact Us",
+    "subtitle": "We are here for you",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent successfully!"
+    },
+    "info": {
+      "address": "Via Roma, 123 - Pisa",
+      "phone": "+39 050 123 4567",
+      "email": "info@ikeb.it"
+    },
+    "orari": {
+      "title": "Opening Hours",
+      "lunGio": "Monday - Thursday: 12:00 - 23:00",
+      "venSab": "Friday - Saturday: 12:00 - 24:00",
+      "domenica": "Sunday: 13:00 - 22:00"
+    }
+  },
+  "footer": {
+    "description": "Italian kebab in Pisa. Quality, tradition and passion in every dish.",
+    "links": {
+      "home": "Home",
+      "chiSiamo": "About Us",
+      "menu": "Menu",
+      "contattaci": "Contact"
+    },
+    "copyright": "© 2024 IKEB Pisa. All rights reserved."
+  },
+  "cta": {
+    "title": "Want to be part of the IKEB project?",
+    "description": "We are looking for passionate collaborators to expand our family.",
+    "button": "Contact Us"
+  }
+}

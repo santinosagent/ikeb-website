@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "chiSiamo": "Chi Siamo",
+    "menu": "Menu",
+    "contattaci": "Contattaci"
+  },
+  "hero": {
+    "title": "Kebab",
+    "titleAccent": "Italiano",
+    "subtitle": "L'autenticità della tradizione italiana in ogni morso",
+    "cta": "Scopri il Menu",
+    "ctaSecondary": "Diventa Collaboratore"
+  },
+  "chiSiamo": {
+    "title": "La Nostra Storia",
+    "subtitle": "Un progetto nato dalla passione per la buona cucina",
+    "description": "IKEB nasce dall'idea di portare un'esperienza gastronomica unica a Pisa, combinando la tradizione del kebab con i sapori e la qualità della cucina italiana. Ogni piatto è preparato con ingredienti freschi e selezionati, nel rispetto della nostra terra e dei nostri clienti.",
+    "values": {
+      "title": "I Nostri Valori",
+      "quality": {
+        "title": "Qualità",
+        "description": "Solo ingredienti freschi e di prima scelta"
+      },
+      "tradition": {
+        "title": "Tradizione",
+        "description": "Ricette tramandate e migliorate nel tempo"
+      },
+      "passion": {
+        "title": "Passione",
+        "description": "Amore per la cucina in ogni piatto"
+      }
+    },
+    "cta": "Lavora con Noi"
+  },
+  "menu": {
+    "title": "Il Nostro Menu",
+    "subtitle": "Scopri i nostri piatti preparati con amore",
+    "categories": {
+      "kebab": "Kebab",
+      "piadine": "Piadine",
+      "panini": "Panini",
+      "bevande": "Bevande",
+      "promozioni": "Promozioni"
+    },
+    "items": {
+      "kebab": [
+        { "name": "Kebab Classico", "description": "Carne di vitello e pollo, verdure grigliate, salsa tzatziki", "price": "€7,50" },
+        { "name": "Kebab Extra", "description": "Porzione XL con doppia carne e formaggio fuso", "price": "€9,50" },
+        { "name": "Kebab Vegetariano", "description": "Verdure grigliate, feta, olive, salsa tahina", "price": "€7,00" },
+        { "name": "Kebab Spettacolare", "description": "Carne mista, bacon croccante, uovo, formaggio", "price": "€10,00" }
+      ],
+      "piadine": [
+        { "name": "Piada Romagnola", "description": "Crostino, rucola, prosciutto crudo di Parma", "price": "€6,50" },
+        { "name": "Piada Kebab", "description": "Carne di kebab, verdure, salsa yogurt", "price": "€7,00" },
+        { "name": "Piada Vegetariana", "description": "Verdure grigliate, mozzarella di bufala, pomodoro", "price": "€6,00" }
+      ],
+      "panini": [
+        { "name": "Panino Kebab", "description": "Pane integrale, kebab, verdure, salsa", "price": "€6,50" },
+        { "name": "Panino Chicken", "description": "Pollo grigliato, lattuga, maionese", "price": "€6,00" },
+        { "name": "Panino Meat", "description": "Bistecca di manzo, formaggio, insalata", "price": "€7,50" }
+      ],
+      "bevande": [
+        { "name": "Acqua Minerale", "price": "€1,50" },
+        { "name": "Bibite", "price": "€2,00" },
+        { "name": "Birra Artigianale", "price": "€4,00" },
+        { "name": "Succhi di Frutta", "price": "€2,50" }
+      ]
+    },
+    "cta": "Ordina Ora"
+  },
+  "contattaci": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per te",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "message": "Messaggio",
+      "submit": "Invia Messaggio",
+      "success": "Messaggio inviato con successo!"
+    },
+    "info": {
+      "address": "Via Roma, 123 - Pisa",
+      "phone": "+39 050 123 4567",
+      "email": "info@ikeb.it"
+    },
+    "orari": {
+      "title": "Orari di Apertura",
+      "lunGio": "Lunedì - Giovedì: 12:00 - 23:00",
+      "venSab": "Venerdì - Sabato: 12:00 - 24:00",
+      "domenica": "Domenica: 13:00 - 22:00"
+    }
+  },
+  "footer": {
+    "description": "Il kebab italiano a Pisa. Qualità, tradizione e passione in ogni piatto.",
+    "links": {
+      "home": "Home",
+      "chiSiamo": "Chi Siamo",
+      "menu": "Menu",
+      "contattaci": "Contattaci"
+    },
+    "copyright": "© 2024 IKEB Pisa. Tutti i diritti riservati."
+  },
+  "cta": {
+    "title": "Vuoi far parte del progetto IKEB?",
+    "description": "Stiamo cercando collaboratori appassionati per espandere la nostra famiglia.",
+    "button": "Contattaci"
+  }
+}

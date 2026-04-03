@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #FF5733;
+  --color-secondary: #2D5BE3;
+  --color-accent: #FFD700;
+  --color-background: #F5F0E8;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-border: #1A1A1A;
+  --color-gradient-from: #FF5733;
+  --color-gradient-to: #FFD700;
+  --color-tertiary: #F4B8B8;
+  --color-quaternary: #5BC8E8;
+
+  --font-heading: "Archivo Black", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --spacing-section: 80px;
+  --spacing-container: 1400px;
+  --spacing-unit: 8px;
+
+  --radius-base: 8px;
+  --shadow-box: 8px 8px 0px #1A1A1A;
+  --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    line-height: 1.1;
+  }
+}
+
+@layer components {
+  .container-custom {
+    max-width: var(--spacing-container);
+    margin: 0 auto;
+    padding: 0 calc(var(--spacing-unit) * 2);
+  }
+
+  .section {
+    padding: var(--spacing-section) 0;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: var(--radius-base);
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-box);
+    transition: var(--transition-base);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 12px 12px 0px var(--color-border);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+    background-color: var(--color-secondary);
+    color: var(--color-surface);
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: var(--radius-base);
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-box);
+    transition: var(--transition-base);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-secondary:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 12px 12px 0px var(--color-border);
+  }
+
+  .card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-box);
+    overflow: hidden;
+    transition: var(--transition-base);
+  }
+
+  .card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px var(--color-border);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-gradient-from), var(--color-gradient-to));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shape-circle {
+    border-radius: 50%;
+  }
+
+  .shape-rect {
+    border-radius: var(--radius-base);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animazioni */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+/* Scroll animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stile scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
