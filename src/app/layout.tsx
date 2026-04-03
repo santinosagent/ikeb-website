@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Archivo_Black, DM_Sans } from 'next/font/google';
+import { routing } from '@/i18n/routing';
 import { redirect } from 'next/navigation';
 
 const archivoBlack = Archivo_Black({
@@ -26,11 +27,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Redirect to Italian locale by default
-  redirect('/it');
+  // Redirect to Italian locale by default - only for root page
+  // This will be handled by the middleware for all routes
   
   return (
-    <html lang="it">
+    <html lang={routing.defaultLocale}>
       <body className={`${archivoBlack.variable} ${dmSans.variable} font-body`}>
         {children}
       </body>
