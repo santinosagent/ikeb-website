@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -16,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[var(--color-text-primary)] text-[var(--color-surface)] py-16">
+    <footer className="bg-[var(--color-primary-dark)] text-white py-16">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
@@ -26,15 +27,17 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex items-center justify-center w-10 h-10 bg-[var(--color-primary)] rounded-full">
-                <span className="text-white font-bold text-lg">I</span>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <div className="relative w-20 h-20">
+                <Image
+                  src="/logo-con-motto.png"
+                  alt="IKEB Logo con motto"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <span className="font-[family-name:var(--font-heading)] text-2xl font-black">
-                IKEB
-              </span>
             </Link>
-            <p className="font-[family-name:var(--font-body)] text-[var(--color-background)] opacity-80 leading-relaxed">
+            <p className="font-[family-name:var(--font-body)] text-white opacity-90 leading-relaxed">
               {t('description')}
             </p>
           </motion.div>
@@ -46,7 +49,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="font-[family-name:var(--font-heading)] text-xl mb-4 text-[var(--color-accent)]">
+            <h3 className="font-[family-name:var(--font-heading)] text-xl mb-4 text-white">
               Menu
             </h3>
             <ul className="space-y-2">
@@ -54,7 +57,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-[family-name:var(--font-body)] text-[var(--color-background)] opacity-80 hover:opacity-100 hover:text-[var(--color-primary)] transition-all duration-200"
+                    className="font-[family-name:var(--font-body)] text-white opacity-90 hover:opacity-100 hover:text-[var(--color-primary-light)] transition-all duration-200"
                   >
                     {link.label}
                   </Link>
@@ -70,10 +73,10 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-[family-name:var(--font-heading)] text-xl mb-4 text-[var(--color-accent)]">
+            <h3 className="font-[family-name:var(--font-heading)] text-xl mb-4 text-white">
               Contatti
             </h3>
-            <ul className="space-y-2 font-[family-name:var(--font-body)] text-[var(--color-background)] opacity-80">
+            <ul className="space-y-2 font-[family-name:var(--font-body)] text-white opacity-90">
               <li>Via Roma, 123 - Pisa</li>
               <li>+39 050 123 4567</li>
               <li>info@ikeb.it</li>
@@ -87,7 +90,7 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 pt-8 border-t border-[var(--color-background)] opacity-30 text-center"
+          className="mt-12 pt-8 border-t border-white opacity-30 text-center"
         >
           <p className="font-[family-name:var(--font-body)] text-sm">
             {t('copyright')}

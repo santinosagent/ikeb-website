@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Link, usePathname } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Header() {
   const t = useTranslations('nav');
@@ -31,7 +32,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-[var(--color-surface)] shadow-lg'
-          : 'bg-transparent'
+          : 'bg-[var(--color-primary)]'
       }`}
     >
       <div className="container-custom">
@@ -41,11 +42,16 @@ export default function Header() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center w-12 h-12 bg-[var(--color-primary)] rounded-full border-2 border-[var(--color-border)]"
+              className="relative w-16 h-16"
             >
-              <span className="text-white font-bold text-xl">I</span>
+              <Image
+                src="/logo-solo.png"
+                alt="IKEB Logo"
+                fill
+                className="object-contain"
+              />
             </motion.div>
-            <span className="font-[family-name:var(--font-heading)] text-2xl font-black text-[var(--color-text-primary)]">
+            <span className="font-[family-name:var(--font-heading)] text-2xl font-black text-white">
               IKEB
             </span>
           </Link>
@@ -56,17 +62,17 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`relative font-[family-name:var(--font-body)] font-medium text-lg transition-colors duration-200 hover:text-[var(--color-primary)] ${
+                  className={`relative font-[family-name:var(--font-body)] font-medium text-lg transition-colors duration-200 hover:text-[var(--color-primary-light)] ${
                     pathname === link.href
-                      ? 'text-[var(--color-primary)]'
-                      : 'text-[var(--color-text-primary)]'
+                      ? 'text-white font-bold'
+                      : 'text-white'
                   }`}
                 >
                   {link.label}
                   {pathname === link.href && (
                     <motion.span
                       layoutId="underline"
-                      className="absolute left-0 bottom-[-4px] w-full h-1 bg-[var(--color-primary)] rounded-full"
+                      className="absolute left-0 bottom-[-4px] w-full h-1 bg-white rounded-full"
                     />
                   )}
                 </Link>
@@ -85,18 +91,18 @@ export default function Header() {
                 rotate: isMobileMenuOpen ? 45 : 0,
                 y: isMobileMenuOpen ? 6 : 0,
               }}
-              className="w-6 h-0.5 bg-[var(--color-text-primary)] rounded-full"
+              className="w-6 h-0.5 bg-white rounded-full"
             />
             <motion.span
               animate={{ opacity: isMobileMenuOpen ? 0 : 1 }}
-              className="w-6 h-0.5 bg-[var(--color-text-primary)] rounded-full"
+              className="w-6 h-0.5 bg-white rounded-full"
             />
             <motion.span
               animate={{
                 rotate: isMobileMenuOpen ? -45 : 0,
                 y: isMobileMenuOpen ? -6 : 0,
               }}
-              className="w-6 h-0.5 bg-[var(--color-text-primary)] rounded-full"
+              className="w-6 h-0.5 bg-white rounded-full"
             />
           </button>
         </nav>
@@ -109,7 +115,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[var(--color-surface)] border-t border-[var(--color-border)]"
+            className="md:hidden bg-[var(--color-primary-dark)] border-t border-[var(--color-border)]"
           >
             <ul className="container-custom py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -119,8 +125,8 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block py-2 font-[family-name:var(--font-body)] font-medium text-lg transition-colors duration-200 ${
                       pathname === link.href
-                        ? 'text-[var(--color-primary)]'
-                        : 'text-[var(--color-text-primary)]'
+                        ? 'text-white font-bold'
+                        : 'text-white'
                     }`}
                   >
                     {link.label}
