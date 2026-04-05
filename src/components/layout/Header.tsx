@@ -31,8 +31,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[var(--color-surface)] shadow-lg'
-          : 'bg-[var(--color-primary)]'
+          ? 'bg-[#f08e1e] shadow-lg'
+          : 'bg-[#f08e1e]'
       }`}
     >
       <div className="container-custom">
@@ -62,7 +62,7 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`relative font-[family-name:var(--font-body)] font-medium text-lg transition-colors duration-200 hover:text-[var(--color-primary-light)] ${
+                  className={`relative font-[family-name:var(--font-body)] font-medium text-lg transition-colors duration-200 hover:text-white ${
                     pathname === link.href
                       ? 'text-white font-bold'
                       : 'text-white'
@@ -115,7 +115,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[var(--color-primary-dark)] border-t border-[var(--color-border)]"
+            className="md:hidden bg-[#d67a10] border-t border-[#1a1a1a]"
           >
             <ul className="container-custom py-4 flex flex-col gap-4">
               {navLinks.map((link) => (

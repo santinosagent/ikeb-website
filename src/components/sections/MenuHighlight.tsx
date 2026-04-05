@@ -12,29 +12,29 @@ export default function MenuHighlight() {
       name: 'Kebab Classico',
       description: 'Carne di vitello e pollo, verdure grigliate, salsa tzatziki',
       price: '€7,50',
-      color: 'var(--color-primary)',
+      color: '#f08e1e',
     },
     {
       name: 'Kebab Spettacolare',
       description: 'Carne mista, bacon croccante, uovo, formaggio',
       price: '€10,00',
-      color: 'var(--color-secondary)',
+      color: '#d67a10',
     },
     {
       name: 'Piada Romagnola',
       description: 'Crostino, rucola, prosciutto crudo di Parma',
       price: '€6,50',
-      color: 'var(--color-accent)',
+      color: '#e68517',
     },
   ];
 
   return (
-    <section className="section bg-[var(--color-background)] relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden">
       {/* Background shapes */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-0 w-32 h-32 bg-[var(--color-primary)] opacity-10 rounded-full -translate-x-1/2" />
-        <div className="absolute bottom-1/4 right-0 w-48 h-48 bg-[var(--color-secondary)] opacity-10 rounded-full translate-x-1/2" />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[var(--color-accent)] opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-1/4 left-0 w-32 h-32 bg-[#f08e1e] opacity-10 rounded-full -translate-x-1/2" />
+        <div className="absolute bottom-1/4 right-0 w-48 h-48 bg-[#f08e1e] opacity-10 rounded-full translate-x-1/2" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#f08e1e] opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       <div className="container-custom relative z-10">
@@ -46,13 +46,13 @@ export default function MenuHighlight() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-[var(--color-primary)] font-[family-name:var(--font-heading)] font-bold text-lg uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#f08e1e] font-[family-name:var(--font-heading)] font-bold text-lg uppercase tracking-wider mb-4">
             {t('subtitle')}
           </span>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-black text-[var(--color-text-primary)] mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-black text-[#1a1a1a] mb-4">
             {t('title')}
           </h2>
-          <div className="w-24 h-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)] mx-auto rounded-full" />
+          <div className="w-24 h-2 bg-gradient-to-r from-[#f08e1e] to-[#ffb347] mx-auto rounded-full" />
         </motion.div>
 
         {/* Featured Dishes Grid */}
@@ -95,10 +95,10 @@ export default function MenuHighlight() {
                   </svg>
                 </div>
 
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-black text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-primary)] transition-colors">
+                <h3 className="font-[family-name:var(--font-heading)] text-xl font-black text-[#1a1a1a] mb-2 group-hover:text-[#f08e1e] transition-colors">
                   {dish.name}
                 </h3>
-                <p className="font-[family-name:var(--font-body)] text-[var(--color-text-secondary)] text-sm mb-4">
+                <p className="font-[family-name:var(--font-body)] text-[#4a4a4a] text-sm mb-4">
                   {dish.description}
                 </p>
                 <span

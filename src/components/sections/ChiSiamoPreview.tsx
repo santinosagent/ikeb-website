@@ -35,11 +35,11 @@ export default function ChiSiamoPreview() {
   ];
 
   return (
-    <section className="section bg-[var(--color-surface)] relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-accent)] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-[var(--color-secondary)] opacity-10 rounded-full translate-y-1/2 -translate-x-1/2" />
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#f08e1e] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#f08e1e] opacity-10 rounded-full translate-y-1/2 -translate-x-1/2" />
       </div>
 
       <div className="container-custom relative z-10">
@@ -51,13 +51,13 @@ export default function ChiSiamoPreview() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-[var(--color-primary)] font-[family-name:var(--font-heading)] font-bold text-lg uppercase tracking-wider mb-4">
+            <span className="inline-block text-[#f08e1e] font-[family-name:var(--font-heading)] font-bold text-lg uppercase tracking-wider mb-4">
               {t('subtitle')}
             </span>
-            <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-black text-[var(--color-text-primary)] mb-6">
+            <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-black text-[#1a1a1a] mb-6">
               {t('title')}
             </h2>
-            <p className="font-[family-name:var(--font-body)] text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+            <p className="font-[family-name:var(--font-body)] text-lg text-[#4a4a4a] mb-8 leading-relaxed">
               {t('description')}
             </p>
 
@@ -72,10 +72,10 @@ export default function ChiSiamoPreview() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="text-center p-4"
                 >
-                  <div className="inline-flex items-center justify-center w-14 h-14 bg-[var(--color-background)] rounded-full mb-3 text-[var(--color-primary)]">
+                  <div className="inline-flex items-center justify-center w-14 h-14 bg-[#f08e1e] rounded-full mb-3 text-white">
                     {value.icon}
                   </div>
-                  <h4 className="font-[family-name:var(--font-heading)] font-bold text-lg text-[var(--color-text-primary)]">
+                  <h4 className="font-[family-name:var(--font-heading)] font-bold text-lg text-[#1a1a1a]">
                     {t(`values.${value.key}.title`)}
                   </h4>
                 </motion.div>
@@ -99,17 +99,17 @@ export default function ChiSiamoPreview() {
               {/* Geometric composition */}
               <div className="absolute inset-0 flex items-center justify-center">
                 {/* Main rectangle */}
-                <div className="w-4/5 h-4/5 bg-[var(--color-primary)] rounded-lg rotate-3" />
+                <div className="w-4/5 h-4/5 bg-[#f08e1e] rounded-lg rotate-3" />
                 
                 {/* Secondary rectangle */}
-                <div className="absolute w-3/5 h-3/5 bg-[var(--color-secondary)] rounded-lg -rotate-2" />
+                <div className="absolute w-3/5 h-3/5 bg-[#d67a10] rounded-lg -rotate-2" />
                 
                 {/* Circle overlay */}
-                <div className="absolute w-1/2 h-1/2 bg-[var(--color-accent)] rounded-full opacity-80" />
+                <div className="absolute w-1/2 h-1/2 bg-white rounded-full opacity-90" />
                 
                 {/* Text overlay */}
                 <div className="absolute text-center p-8">
-                  <span className="font-[family-name:var(--font-heading)] text-6xl md:text-7xl font-black text-[var(--color-text-primary)]">
+                  <span className="font-[family-name:var(--font-heading)] text-6xl md:text-7xl font-black text-[#f08e1e]">
                     IKEB
                   </span>
                 </div>
@@ -119,12 +119,12 @@ export default function ChiSiamoPreview() {
               <motion.div
                 animate={{ rotate: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -top-4 -right-4 w-16 h-16 bg-[var(--color-tertiary)] rounded-lg"
+                className="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-lg"
               />
               <motion.div
                 animate={{ rotate: [0, -10, 0] }}
                 transition={{ duration: 5, repeat: Infinity }}
-                className="absolute -bottom-4 -left-4 w-12 h-12 bg-[var(--color-quaternary)] rounded-full"
+                className="absolute -bottom-4 -left-4 w-12 h-12 bg-white rounded-full"
               />
             </div>
           </motion.div>

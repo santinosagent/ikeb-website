@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[var(--color-primary-dark)] text-white py-16">
+    <footer className="bg-[#d67a10] text-white py-16">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-[family-name:var(--font-body)] text-white opacity-90 hover:opacity-100 hover:text-[var(--color-primary-light)] transition-all duration-200"
+                    className="font-[family-name:var(--font-body)] text-white opacity-90 hover:opacity-100 hover:text-white transition-all duration-200"
                   >
                     {link.label}
                   </Link>
